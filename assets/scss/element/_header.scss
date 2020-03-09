@@ -1,0 +1,15 @@
+.chris-header-box{
+  height: 80px;
+  background-color: $gray-800;
+  a{
+    color: $white;
+  }
+  .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: red;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+}
