@@ -4,10 +4,13 @@
   height: 100%;
   border-radius: 10px;
 }
-.work-cart-img{
+.work-card-img{
   img{
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 200px;
     background-color: #fff;
+    //border-radius: 50%;
+    border-radius: 10px;
+    overflow: hidden;
   }
 }
