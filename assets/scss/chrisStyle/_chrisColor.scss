@@ -29,6 +29,10 @@ $ap-purple-200: #e7c8de !default;
 $ap-purple-600: #DBA7CC !default;
 $ap-yellow-200: #FFF291 !default;
 $ap-yellow-600: #fee100 !default;
+//
+$ch-pink-400: #F5B3B3 !default;
+$ch-pink: #D68181 !default;
+$ch-pink-600: #DD9292 !default;
 
 //color
 .white {color:$white !important;} 
@@ -43,7 +47,9 @@ $ap-yellow-600: #fee100 !default;
 .gray-900 {color:$gray-900;}
 .black  {color:$black;}
 //chris color
-.ch-pink {color: #D68181;}
+.ch-pink {color: $ch-pink;}
+.ch-pink-400 {color: $ch-pink-400;}
+.ch-pink-600 {color: $ch-pink-600;}
 
 .ap-gray  {color:$ap-gray;}
 .ap-red{color: $ap-red;}

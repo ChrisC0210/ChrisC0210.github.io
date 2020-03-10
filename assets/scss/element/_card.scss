@@ -11,6 +11,13 @@
     background-color: #fff;
     //border-radius: 50%;
     border-radius: 10px;
+    border: solid 2px $white;
     overflow: hidden;
+    transition: 0.3s;
+    object-fit: cover;
+    &:hover, &:active, &:focus{
+      border: solid 10px $ch-pink-600;
+      //transform: scale(0.7);
+    }
   }
 }
