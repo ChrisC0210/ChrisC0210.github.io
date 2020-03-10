@@ -9,8 +9,8 @@
 </head>
 <body class="bg-gray-900">
   <!-- header -->
-  <nav class="navbar bg-dark text-white navbar-expand-lg chris-header-box text-o-1-4-1">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-lg chris-header-box text-o-1-4-1">
+    <a class="navbar-brand" href="./">
       <img src="./assets/img/palnt.svg" alt="chris-logo">
     </a>
     <!-- <button class="navbar-toggler bg-dark text-white" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +27,13 @@
           <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#SKILL">SKILL</a>
+          <a class="nav-link" href="/#skill">SKILL</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#EXPERIENCE">EXPERIENCE</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#WORKS">WORKS</a>
+          <a class="nav-link" href="/#works">WORKS</a>
         </li>
       </ul>
       <span class="navbar-text ch-pink">
@@ -47,7 +47,7 @@
       <h2 class="text-center text-o-5-4-5">Hello, my name is Chris C.</h2>
       <h4 class="text-center text-o-2-4-2">scroll down to know more ...</h4>
     </div>
-    <div class="mouse"><span></span></div>
+    <div class="mouse" id="skill"><span></span></div>
   </section>
   <section class="container mt-4 col-12 col-lg-8 white text-r-1-4-1">
     <h2 class="text-center text-o-5-4-5">SKILL</h2>
@@ -56,7 +56,7 @@
         <!-- <div class="col col-lg-2 col-sm-12">
           <img src="./assets/img/palnt.svg" alt="">
         </div> -->
-        <div class="col col-lg-10 col-sm-12 mb-4" id="#SKILL">
+        <div class="col col-lg-10 col-sm-12 mb-4">
           <div class="text-o-2-6-2 gray-900">Web Design</div>
           <div>- Build or redesign websites.</div>
           <div>- Design User Exper.</div>
@@ -79,8 +79,8 @@
     </div>
 
   </section>
-  <section class="container mt-4 col-lg-10 col-sm-12 pt-2 pb-2 white text-r-1-4-1">
-    <h2 class="text-center text-o-5-4-5" id="#WORKS">WORKS</h2>
+  <section class="container mt-4 col-lg-10 col-sm-12 pt-2 pb-2 white text-r-1-4-1 work-card-box">
+    <h2 class="text-center text-o-5-4-5" id="works">WORKS</h2>
     <div class="d-flex justify-content-center row mb-4">
       <div class="col-lg-4 col-sm-12 work-card-img mb-2">
         <a href="https://docpro.com/" target="_blank">
@@ -130,6 +130,9 @@
       </div>
     </div>
   </section>
+  <section class="d-flex justify-content-center container mt-4 col-lg-10 col-sm-12 pt-2 pb-2 work-card-box">
+    <h2 class="text-center text-o-5-4-5"><a href="mailto: chiandeye@gmail.com">Get In Touch</a></h2> 
+  </section>
   <!-- footer start -->
   <div class="text-center footer-box text-g-1-l-1 white">
     <p> Copyright © 2020 Chris C.</p>
@@ -145,14 +148,13 @@ $('.first-button').on('click', function () {
 
   $('.animated-icon1').toggleClass('open');
 });
-$('.second-button').on('click', function () {
-
-  $('.animated-icon2').toggleClass('open');
+//
+$('#SKILL').click(function (e) {
+    e.preventDefault();
+    $('.toggle').toggle();
+    window.location.hash = ($(e.currentTarget).attr("href"));
 });
-$('.third-button').on('click', function () {
-
-  $('.animated-icon3').toggleClass('open');
-});
+///
 });
   </script>
 </body>
