@@ -1,6 +1,9 @@
 .chris-header-box{
   height: 80px;
   background-color: $gray-800;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
   a{
     color: $white;
   }
@@ -12,6 +15,11 @@
   //   border: 1px solid transparent;
   //   border-radius: .25rem;
   // }
+  .navbar-text{
+    a{
+      color: $ch-pink;
+    }
+  }
 }
 //nav icon
 /* Icon 1 */
