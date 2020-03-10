@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,9 @@
   <link rel="stylesheet" href="./dist/style/all.min.css">
 </head>
 <body class="bg-gray-900">
+  <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
   <!-- header -->
   <nav class="navbar navbar-expand-lg chris-header-box text-o-1-4-1">
     <a class="navbar-brand" href="./">
@@ -17,15 +21,15 @@
       <span class="navbar-toggler-icon"></span>
     </button> -->
     <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarText"
-    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <div class="animated-icon1"><span></span><span></span><span></span></div>
-  </button>
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon1"><span></span><span></span><span></span></div>
+    </button>
 
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
-        <!-- <li class="nav-item active">
-          <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
-        </li> -->
+        <li class="nav-item active">
+          <a class="nav-link" href="/#about">ABOUT <span class="sr-only">(current)</span></a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="/#skill">SKILL</a>
         </li>
@@ -44,12 +48,21 @@
   <!-- header -->
   <section class="container col-10 white banner-box">
     <div class="banner-text">
-      <h2 class="text-center text-o-5-4-5">Hello, my name is Chris C.</h2>
-      <h4 class="text-center text-o-2-4-2">scroll down to know more ...</h4>
+      <h2 class="text-center text-o-7-4-7">Hello,this is Chris C.</h2>
+      <h4 class="text-center text-o-4-4-4">scroll down to know more ...</h4>
+    </div>
+    <div class="mouse"><span></span></div>
+  </section>
+  <section class="container col-10 white banner-box" id="about">
+    <div class="banner-text">
+      <h2 class="text-center text-o-7-4-7">About</h2>
+      <h4 class="text-center text-o-4-4-4">#F2E</h4>
+      <h4 class="text-center text-o-4-4-4">#Web Design</h4>
+      <h4 class="text-center text-o-4-4-4">#UI/UX Design</h4>
     </div>
     <div class="mouse" id="skill"><span></span></div>
   </section>
-  <section class="container mt-4 col-12 col-lg-8 white text-r-1-4-1">
+  <section class="container mt-4 col-12 col-lg-8 white text-r-1-4-1" id="skill">
     <h2 class="text-center text-o-5-4-5">SKILL</h2>
     <div class=" pt-4 pb-4 skill-box">
       <div class="d-flex justify-content-center col-12 row mb-2">
@@ -77,20 +90,19 @@
         </div>
       </div>
     </div>
-
   </section>
   <section class="container mt-4 col-lg-10 col-sm-12 pt-2 pb-2 white text-r-1-4-1 work-card-box">
     <h2 class="text-center text-o-5-4-5" id="works">WORKS</h2>
     <div class="d-flex justify-content-center row mb-4">
       <div class="col-lg-4 col-sm-12 work-card-img mb-2">
         <a href="https://docpro.com/" target="_blank">
-          <img src="./assets/img/work/header_img.png" alt="">        
+          <img src="./assets/img/work/header_img.png" alt="">
         </a>
       </div>
       <div class="col col-lg-6 col-sm-12">
         <div class="text-o-3-6-3 ">
           <a href="https://docpro.com/" target="_blank">Docpro</a>
-          </div>
+        </div>
         <div>- Build or redesign websites.</div>
         <div>- Design User Exper.</div>
         <div>- Design web pages content, understood Responsive design.</div>
@@ -100,13 +112,13 @@
     <div class="d-flex justify-content-center row mb-4">
       <div class="col-lg-4 col-sm-12 work-card-img mb-2">
         <a href="https://www.aussiepremier.com/shopping" target="_blank">
-        <img src="./assets/img/work/img-homePage-banner.png" alt="">
+          <img src="./assets/img/work/img-homePage-banner.png" alt="">
         </a>
       </div>
       <div class="col col-lg-6 col-sm-12">
         <div class="text-o-2-6-2">
           <a href="https://www.aussiepremier.com/shopping" target="_blank">Aussiepremier</a>
-          </div>
+        </div>
         <div>- Build or redesign websites.</div>
         <div>- Design User Exper.</div>
         <div>- Design web pages content, understood Responsive design.</div>
@@ -122,7 +134,23 @@
       <div class="col col-lg-6 col-sm-12">
         <div class="text-o-2-6-2">
           <a href="＃" target="_blank">Booking Class</a>
-          </div>
+        </div>
+        <div>- Build or redesign websites.</div>
+        <div>- Design User Exper.</div>
+        <div>- Design web pages content, understood Responsive design.</div>
+        <div>- Tool : Sketch, Adobe XD, Adobe Photoshop, Adobe Illustrator.</div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center row mb-4">
+      <div class="col-lg-4 col-sm-12 work-card-img mb-2">
+        <a href="#" target="_blank">
+          <img src="./assets/img/palnt.svg" alt="">
+        </a>
+      </div>
+      <div class="col col-lg-6 col-sm-12">
+        <div class="text-o-2-6-2">
+          <a href="＃" target="_blank">Booking Class</a>
+        </div>
         <div>- Build or redesign websites.</div>
         <div>- Design User Exper.</div>
         <div>- Design web pages content, understood Responsive design.</div>
@@ -131,7 +159,7 @@
     </div>
   </section>
   <section class="d-flex justify-content-center container mt-4 col-lg-10 col-sm-12 pt-2 pb-2 work-card-box">
-    <h2 class="text-center text-o-5-4-5"><a href="mailto: chiandeye@gmail.com">Get In Touch</a></h2> 
+    <h2 class="text-center text-o-5-4-5"><a href="mailto: chiandeye@gmail.com">Get In Touch</a></h2>
   </section>
   <!-- footer start -->
   <div class="text-center footer-box text-g-1-l-1 white">
@@ -143,19 +171,15 @@
   <script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function () {
+      //header burger
+      $('.first-button').on('click', function () {
+        $('.animated-icon1').toggleClass('open');
+      });
+      //scroll
 
-$('.first-button').on('click', function () {
-
-  $('.animated-icon1').toggleClass('open');
-});
-//
-$('#SKILL').click(function (e) {
-    e.preventDefault();
-    $('.toggle').toggle();
-    window.location.hash = ($(e.currentTarget).attr("href"));
-});
-///
-});
+      //end
+    });
   </script>
 </body>
+
 </html>
